@@ -17,6 +17,7 @@
 mono_crash.*
 
 # Build results
+build/VOXEL_BOT
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
