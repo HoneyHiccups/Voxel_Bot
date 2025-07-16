@@ -1,12 +1,12 @@
 raylib/raylib/CMakeFiles/raylib.dir/raudio.c.o: \
- /home/honey_hiccups/Documents/VoxleBot/raylib/src/raudio.c \
+ /home/honey_hiccups/Documents/Voxel_Bot/raylib/src/raudio.c \
  /usr/include/stdc-predef.h \
- /home/honey_hiccups/Documents/VoxleBot/raylib/src/raylib.h \
+ /home/honey_hiccups/Documents/Voxel_Bot/raylib/src/raylib.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
- /home/honey_hiccups/Documents/VoxleBot/raylib/src/config.h \
- /home/honey_hiccups/Documents/VoxleBot/raylib/src/utils.h \
- /home/honey_hiccups/Documents/VoxleBot/raylib/src/external/miniaudio.h \
+ /home/honey_hiccups/Documents/Voxel_Bot/raylib/src/config.h \
+ /home/honey_hiccups/Documents/Voxel_Bot/raylib/src/utils.h \
+ /home/honey_hiccups/Documents/Voxel_Bot/raylib/src/external/miniaudio.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h /usr/include/pthread.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -91,11 +91,11 @@ raylib/raylib/CMakeFiles/raylib.dir/raudio.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
  /usr/include/x86_64-linux-gnu/bits/eventfd.h \
- /home/honey_hiccups/Documents/VoxleBot/raylib/src/external/dr_wav.h \
- /home/honey_hiccups/Documents/VoxleBot/raylib/src/external/stb_vorbis.c \
+ /home/honey_hiccups/Documents/Voxel_Bot/raylib/src/external/dr_wav.h \
+ /home/honey_hiccups/Documents/Voxel_Bot/raylib/src/external/stb_vorbis.c \
  /usr/include/alloca.h \
- /home/honey_hiccups/Documents/VoxleBot/raylib/src/external/dr_mp3.h \
- /home/honey_hiccups/Documents/VoxleBot/raylib/src/external/qoa.h \
- /home/honey_hiccups/Documents/VoxleBot/raylib/src/external/qoaplay.c \
- /home/honey_hiccups/Documents/VoxleBot/raylib/src/external/jar_xm.h \
- /home/honey_hiccups/Documents/VoxleBot/raylib/src/external/jar_mod.h
+ /home/honey_hiccups/Documents/Voxel_Bot/raylib/src/external/dr_mp3.h \
+ /home/honey_hiccups/Documents/Voxel_Bot/raylib/src/external/qoa.h \
+ /home/honey_hiccups/Documents/Voxel_Bot/raylib/src/external/qoaplay.c \
+ /home/honey_hiccups/Documents/Voxel_Bot/raylib/src/external/jar_xm.h \
+ /home/honey_hiccups/Documents/Voxel_Bot/raylib/src/external/jar_mod.h

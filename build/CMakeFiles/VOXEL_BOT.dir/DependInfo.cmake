@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/honey_hiccups/Documents/VoxleBot/src/main.cpp" "CMakeFiles/VOXEL_BOT.dir/src/main.cpp.o" "gcc" "CMakeFiles/VOXEL_BOT.dir/src/main.cpp.o.d"
+  "/home/honey_hiccups/Documents/Voxel_Bot/src/main.cpp" "CMakeFiles/VOXEL_BOT.dir/src/main.cpp.o" "gcc" "CMakeFiles/VOXEL_BOT.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

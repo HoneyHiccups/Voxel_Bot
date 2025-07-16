@@ -68,7 +68,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=c++17"
+					"fragment" : "-std=c++17"
 				}
 			],
 			"defines" : 
@@ -86,11 +86,11 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "/home/honey_hiccups/Documents/VoxleBot/raylib/src"
+					"path" : "/home/honey_hiccups/Documents/Voxel_Bot/raylib/src"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/honey_hiccups/Documents/VoxleBot/raylib/src/external/glfw/include"
+					"path" : "/home/honey_hiccups/Documents/Voxel_Bot/raylib/src/external/glfw/include"
 				}
 			],
 			"language" : "CXX",
@@ -124,10 +124,6 @@
 	{
 		"commandFragments" : 
 		[
-			{
-				"fragment" : "-g",
-				"role" : "flags"
-			},
 			{
 				"fragment" : "",
 				"role" : "flags"

@@ -63,7 +63,7 @@
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "Choose the type of build."
 				},
 				{
 					"name" : "STRINGS",
@@ -71,7 +71,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "Debug"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_CACHEFILE_DIR",
@@ -83,7 +83,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/honey_hiccups/Documents/VoxleBot/build"
+			"value" : "/home/honey_hiccups/Documents/Voxel_Bot/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -183,11 +183,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "CXX compiler"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/g++"
+			"value" : "/usr/bin/c++"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -311,11 +311,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "C compiler"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc"
+			"value" : "/usr/bin/cc"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -547,11 +547,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "Enable/Disable output of compile commands during generation."
 				}
 			],
 			"type" : "BOOL",
-			"value" : "TRUE"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_EXTRA_GENERATOR",
@@ -575,7 +575,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/honey_hiccups/Documents/VoxleBot/build/CMakeFiles/pkgRedirects"
+			"value" : "/home/honey_hiccups/Documents/Voxel_Bot/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -695,7 +695,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/honey_hiccups/Documents/VoxleBot"
+			"value" : "/home/honey_hiccups/Documents/Voxel_Bot"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1755,7 +1755,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/honey_hiccups/Documents/VoxleBot/build/raylib/raylib/external/glfw"
+			"value" : "/home/honey_hiccups/Documents/Voxel_Bot/build/raylib/raylib/external/glfw"
 		},
 		{
 			"name" : "GLFW_BUILD_DOCS",
@@ -1887,7 +1887,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/honey_hiccups/Documents/VoxleBot/raylib/src/external/glfw"
+			"value" : "/home/honey_hiccups/Documents/Voxel_Bot/raylib/src/external/glfw"
 		},
 		{
 			"name" : "INCLUDE_EVERYTHING",
@@ -2243,7 +2243,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/honey_hiccups/Documents/VoxleBot/build"
+			"value" : "/home/honey_hiccups/Documents/Voxel_Bot/build"
 		},
 		{
 			"name" : "VOXEL_BOT_IS_TOP_LEVEL",
@@ -2267,7 +2267,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/honey_hiccups/Documents/VoxleBot"
+			"value" : "/home/honey_hiccups/Documents/Voxel_Bot"
 		},
 		{
 			"name" : "WITH_PIC",
@@ -4479,7 +4479,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/honey_hiccups/Documents/VoxleBot/build/raylib/raylib"
+			"value" : "/home/honey_hiccups/Documents/Voxel_Bot/build/raylib/raylib"
 		},
 		{
 			"name" : "raylib_IS_TOP_LEVEL",
@@ -4503,7 +4503,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/honey_hiccups/Documents/VoxleBot/raylib/src"
+			"value" : "/home/honey_hiccups/Documents/Voxel_Bot/raylib/src"
 		}
 	],
 	"kind" : "cache",

@@ -1,11 +1,11 @@
 raylib/raylib/CMakeFiles/raylib.dir/utils.c.o: \
- /home/honey_hiccups/Documents/VoxleBot/raylib/src/utils.c \
+ /home/honey_hiccups/Documents/Voxel_Bot/raylib/src/utils.c \
  /usr/include/stdc-predef.h \
- /home/honey_hiccups/Documents/VoxleBot/raylib/src/raylib.h \
+ /home/honey_hiccups/Documents/Voxel_Bot/raylib/src/raylib.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
- /home/honey_hiccups/Documents/VoxleBot/raylib/src/config.h \
- /home/honey_hiccups/Documents/VoxleBot/raylib/src/utils.h \
+ /home/honey_hiccups/Documents/Voxel_Bot/raylib/src/config.h \
+ /home/honey_hiccups/Documents/Voxel_Bot/raylib/src/utils.h \
  /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

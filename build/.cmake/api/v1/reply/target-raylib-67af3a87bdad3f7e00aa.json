@@ -111,7 +111,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=c99"
+					"fragment" : "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99"
 				}
 			],
 			"defines" : 
@@ -129,12 +129,12 @@
 			[
 				{
 					"backtrace" : 10,
-					"path" : "/home/honey_hiccups/Documents/VoxleBot/raylib/src"
+					"path" : "/home/honey_hiccups/Documents/Voxel_Bot/raylib/src"
 				},
 				{
 					"backtrace" : 13,
 					"isSystem" : true,
-					"path" : "/home/honey_hiccups/Documents/VoxleBot/raylib/src/external/glfw/include"
+					"path" : "/home/honey_hiccups/Documents/Voxel_Bot/raylib/src/external/glfw/include"
 				}
 			],
 			"language" : "C",

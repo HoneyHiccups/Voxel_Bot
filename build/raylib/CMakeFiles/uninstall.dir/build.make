@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/honey_hiccups/Documents/VoxleBot
+CMAKE_SOURCE_DIR = /home/honey_hiccups/Documents/Voxel_Bot
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/honey_hiccups/Documents/VoxleBot/build
+CMAKE_BINARY_DIR = /home/honey_hiccups/Documents/Voxel_Bot/build
 
 # Utility rule file for uninstall.
 
@@ -67,7 +67,7 @@ include raylib/CMakeFiles/uninstall.dir/compiler_depend.make
 include raylib/CMakeFiles/uninstall.dir/progress.make
 
 raylib/CMakeFiles/uninstall:
-	cd /home/honey_hiccups/Documents/VoxleBot/build/raylib && /usr/bin/cmake -P /home/honey_hiccups/Documents/VoxleBot/build/raylib/cmake_uninstall.cmake
+	cd /home/honey_hiccups/Documents/Voxel_Bot/build/raylib && /usr/bin/cmake -P /home/honey_hiccups/Documents/Voxel_Bot/build/raylib/cmake_uninstall.cmake
 
 uninstall: raylib/CMakeFiles/uninstall
 uninstall: raylib/CMakeFiles/uninstall.dir/build.make
@@ -78,10 +78,10 @@ raylib/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : raylib/CMakeFiles/uninstall.dir/build
 
 raylib/CMakeFiles/uninstall.dir/clean:
-	cd /home/honey_hiccups/Documents/VoxleBot/build/raylib && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /home/honey_hiccups/Documents/Voxel_Bot/build/raylib && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : raylib/CMakeFiles/uninstall.dir/clean
 
 raylib/CMakeFiles/uninstall.dir/depend:
-	cd /home/honey_hiccups/Documents/VoxleBot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/honey_hiccups/Documents/VoxleBot /home/honey_hiccups/Documents/VoxleBot/raylib /home/honey_hiccups/Documents/VoxleBot/build /home/honey_hiccups/Documents/VoxleBot/build/raylib /home/honey_hiccups/Documents/VoxleBot/build/raylib/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/honey_hiccups/Documents/Voxel_Bot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/honey_hiccups/Documents/Voxel_Bot /home/honey_hiccups/Documents/Voxel_Bot/raylib /home/honey_hiccups/Documents/Voxel_Bot/build /home/honey_hiccups/Documents/Voxel_Bot/build/raylib /home/honey_hiccups/Documents/Voxel_Bot/build/raylib/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : raylib/CMakeFiles/uninstall.dir/depend
 

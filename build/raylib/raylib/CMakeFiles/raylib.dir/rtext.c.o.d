@@ -1,12 +1,12 @@
 raylib/raylib/CMakeFiles/raylib.dir/rtext.c.o: \
- /home/honey_hiccups/Documents/VoxleBot/raylib/src/rtext.c \
+ /home/honey_hiccups/Documents/Voxel_Bot/raylib/src/rtext.c \
  /usr/include/stdc-predef.h \
- /home/honey_hiccups/Documents/VoxleBot/raylib/src/raylib.h \
+ /home/honey_hiccups/Documents/Voxel_Bot/raylib/src/raylib.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
- /home/honey_hiccups/Documents/VoxleBot/raylib/src/config.h \
- /home/honey_hiccups/Documents/VoxleBot/raylib/src/utils.h \
- /home/honey_hiccups/Documents/VoxleBot/raylib/src/rlgl.h \
+ /home/honey_hiccups/Documents/Voxel_Bot/raylib/src/config.h \
+ /home/honey_hiccups/Documents/Voxel_Bot/raylib/src/utils.h \
+ /home/honey_hiccups/Documents/Voxel_Bot/raylib/src/rlgl.h \
  /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -32,7 +32,7 @@ raylib/raylib/CMakeFiles/raylib.dir/rtext.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h /usr/include/string.h \
  /usr/include/ctype.h /usr/include/x86_64-linux-gnu/bits/endian.h \
  /usr/include/x86_64-linux-gnu/bits/endianness.h \
- /home/honey_hiccups/Documents/VoxleBot/raylib/src/external/stb_rect_pack.h \
+ /home/honey_hiccups/Documents/Voxel_Bot/raylib/src/external/stb_rect_pack.h \
  /usr/include/assert.h /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -41,4 +41,4 @@ raylib/raylib/CMakeFiles/raylib.dir/rtext.c.o: \
  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /home/honey_hiccups/Documents/VoxleBot/raylib/src/external/stb_truetype.h
+ /home/honey_hiccups/Documents/Voxel_Bot/raylib/src/external/stb_truetype.h
