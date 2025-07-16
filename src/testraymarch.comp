@@ -1,0 +1,19 @@
+#version 430
+
+layout(local_size_x = 16, local_size_y = 16) in;  // 256 threads per workgroup
+layout(rgba32f, binding = 0) uniform image2D outputTex;  // Output texture
+
+//uniform int voxels[16][16][16];
+
+void main() {
+    ivec2 pixelCoords = ivec2(gl_GlobalInvocationID.xy);
+    ivec2 texSize = imageSize(outputTex);
+    if (pixelCoords.x >= texSize.x || pixelCoords.y >= texSize.y) return;
+
+    // Color pixels based on workgroup ID
+    vec2 workgroupID = vec2(gl_WorkGroupID.xy);
+    vec2 totalWorkgroups = vec2(texSize.x / gl_WorkGroupSize.x, texSize.y / gl_WorkGroupSize.y);
+    vec2 normalizedID = workgroupID / totalWorkgroups;  // Normalize to [0, 1]
+
+    imageStore(outputTex, pixelCoords, vec4(normalizedID.x, normalizedID.y, 0.0, 1.0));
+}

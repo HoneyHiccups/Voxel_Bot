@@ -19,33 +19,40 @@ int main ()
 	InitWindow(1280, 720, "VOXEL_BOT");
 	//SetWindowMinSize(RoundtoInt(float(1280)*.66f),RoundtoInt(float(720)*.66f));               // Set window minimum dimensions (for FLAG_WINDOW_RESIZABLE)
 
-	// Utility function from resource_dir.h to find the resources folder and set it as the current working directory so we can load from it
-	//SearchAndSetResourceDir("resources");
-
-	//ExportImgToSource();  // funcstion I use for embeding things :: umath
-
 
 
 	Vector2 ScreenSize = {float(GetScreenWidth()),float(GetScreenHeight())};
 
 	SetTargetFPS(GetMonitorRefreshRate(GetCurrentMonitor())-2);
 
-	//Scene* mainscene = &Scene::Get();
 
-    //printf("%s\n", glGetString(GL_VERSION));
+    // Create a texture for compute shader output
+    Image outputImg = GenImageColor(800, 600, BLANK);
+    Texture2D outputTex = LoadTextureFromImage(outputImg);
+    UnloadImage(outputImg);
+
+    // Load compute shader
+    Shader compShader = LoadShader(0, TextFormat("testraymarch.comp", 430));
+
+
 
 
 	EndDrawing();
 
-	//mainscene->printfromscene();
-	// game loop
+
 
 	while (!WindowShouldClose())		// run the loop untill the user presses ESCAPE or presses the Close button on the window
 	{
 
+		
 
 		ScreenSize = {float(GetScreenWidth()),float(GetScreenHeight())};
 
+		BeginTextureMode((RenderTexture2D){outputTex.id, 800, 600});
+        BeginShaderMode(compShader);
+
+
+		DrawRectangle(0, 0, 800, 600, WHITE);
 		BeginDrawing();
 		ClearBackground(BLUE);
         //DrawText(TextFormat("OpenGL %s", glGetString(GL_VERSION)), 10, 10, 20, GREEN);
