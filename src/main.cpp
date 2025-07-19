@@ -1,4 +1,4 @@
-/*
+
 //new commit push
 #include <cstdlib>  // Add this line for malloc
 #include <cstring>  // Add this line for memcpy
@@ -6,6 +6,7 @@
 #include "rlgl.h" 
 #include "raygui.h"
 #include <cstdio>
+#include <cmath>
 
 
 int main ()
@@ -26,13 +27,37 @@ int main ()
 	SetTargetFPS(GetMonitorRefreshRate(GetCurrentMonitor())-2);
 
 
-    // Create a texture for compute shader output
-    Image outputImg = GenImageColor(800, 600, BLANK);
+
+    // Load compute shader
+    const char *computeShaderCode = LoadFileText("/home/honey_hiccups/Documents/Voxel_Bot/src/shaders/TestingComputeShader.comp");
+    unsigned int computeShaderId = rlCompileShader(computeShaderCode, RL_COMPUTE_SHADER);
+
+    // 2. Create the compute shader program
+
+    unsigned int computeProgram = rlLoadComputeShaderProgram(computeShaderId);
+
+    Shader computeShader = { computeProgram };
+
+    printf ("\e[35mGl Version is %i\e[0m \n ", rlGetVersion());
+
+
+    //Image outputImg = GenImageColor(800, 600, BLANK);
+    float *pixels = (float *)RL_CALLOC(800*600*4, sizeof(float));  // 4 channels × float
+    Image outputImg = {
+    .data = pixels,
+    .width = 800,
+    .height = 600,
+    .format = PIXELFORMAT_UNCOMPRESSED_R32G32B32A32,  // 32-bit float
+    };
+
     Texture2D outputTex = LoadTextureFromImage(outputImg);
     UnloadImage(outputImg);
 
-    // Load compute shader
-    Shader compShader = LoadShader(0, TextFormat("testraymarch.comp", 430));
+    // Bind texture to image unit 0 (matches layout(binding=0) in shader)
+    rlBindImageTexture(outputTex.id, 0, PIXELFORMAT_UNCOMPRESSED_R32G32B32A32, false);
+    
+
+
 
 
 
@@ -44,19 +69,21 @@ int main ()
 	while (!WindowShouldClose())		// run the loop untill the user presses ESCAPE or presses the Close button on the window
 	{
 
-		
+		rlSetShader(computeShader.id, NULL);
+        rlComputeShaderDispatch(
+        (int)ceil(800.0f / 16.0f),  // Workgroups X
+        (int)ceil(600.0f / 16.0f),  // Workgroups Y
+        1                           // Workgroups Z 
+        );
 
 		ScreenSize = {float(GetScreenWidth()),float(GetScreenHeight())};
 
-		BeginTextureMode((RenderTexture2D){outputTex.id, 800, 600});
-        BeginShaderMode(compShader);
+		ClearBackground(BLACK);
 
+        //shadder img
+        DrawTexture(outputTex, 0, 0, WHITE);  // Display computed texture
 
-		DrawRectangle(0, 0, 800, 600, WHITE);
-		BeginDrawing();
-		ClearBackground(BLUE);
-        //DrawText(TextFormat("OpenGL %s", glGetString(GL_VERSION)), 10, 10, 20, GREEN);
-
+        DrawFPS(0 ,20);
 		EndDrawing();
 
 	}
@@ -66,7 +93,7 @@ int main ()
 	return 0;
 }
 
-*/
+
 
 /*
 ///////////////////// test shader
@@ -104,7 +131,7 @@ int main()
     return 0;
 }
 
-*/
+/*
 #include "raylib.h"
 
 
@@ -210,3 +237,5 @@ int main(void)
 
     return 0;
 }
+
+*/
