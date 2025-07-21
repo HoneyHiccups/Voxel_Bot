@@ -111,7 +111,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99"
+					"fragment" : "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O2 -g -DNDEBUG -std=c99"
 				}
 			],
 			"defines" : 

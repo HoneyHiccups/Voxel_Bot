@@ -61,27 +61,30 @@ int main ()
 
 
 
-
+    BeginDrawing();
+    ClearBackground(BLACK);
 	EndDrawing();
 
 
 
-	while (!WindowShouldClose())		// run the loop untill the user presses ESCAPE or presses the Close button on the window
+	while (!WindowShouldClose())
 	{
 
+        ScreenSize = {float(GetScreenWidth()),float(GetScreenHeight())};
+
+        ClearBackground(BLACK);
+
+        BeginDrawing();
+
+        BeginShaderMode(computeShader);
 		rlSetShader(computeShader.id, NULL);
-        rlComputeShaderDispatch(
-        (int)ceil(800.0f / 16.0f),  // Workgroups X
-        (int)ceil(600.0f / 16.0f),  // Workgroups Y
-        1                           // Workgroups Z 
-        );
+        rlComputeShaderDispatch((int)ceil(800.0f / 16.0f),(int)ceil(600.0f / 16.0f),1);
 
-		ScreenSize = {float(GetScreenWidth()),float(GetScreenHeight())};
 
-		ClearBackground(BLACK);
+        //shadder img draw
+        DrawTexture(outputTex, 0, 0, WHITE); 
 
-        //shadder img
-        DrawTexture(outputTex, 0, 0, WHITE);  // Display computed texture
+        //EndShaderMode();
 
         DrawFPS(0 ,20);
 		EndDrawing();

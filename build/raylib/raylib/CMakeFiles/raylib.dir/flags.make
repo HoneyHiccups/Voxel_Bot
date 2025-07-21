@@ -6,5 +6,5 @@ C_DEFINES = -DGRAPHICS_API_OPENGL_43 -DPLATFORM_DESKTOP
 
 C_INCLUDES = -I/home/honey_hiccups/Documents/Voxel_Bot/raylib/src -isystem /home/honey_hiccups/Documents/Voxel_Bot/raylib/src/external/glfw/include
 
-C_FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99
+C_FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O2 -g -DNDEBUG -std=c99
 

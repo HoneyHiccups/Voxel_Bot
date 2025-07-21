@@ -11,7 +11,7 @@
 						1
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-RelWithDebInfo-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -30,7 +30,7 @@
 						2
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-raylib-2764969c1b06177dc285.json",
+					"jsonFile" : "directory-raylib-RelWithDebInfo-2764969c1b06177dc285.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.25"
@@ -50,7 +50,7 @@
 						3
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-raylib.raylib-aeb4885ee3b2614f4d87.json",
+					"jsonFile" : "directory-raylib.raylib-RelWithDebInfo-aeb4885ee3b2614f4d87.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.25"
@@ -69,7 +69,7 @@
 					[
 						4
 					],
-					"jsonFile" : "directory-raylib.raylib.external.glfw-c5291b77ac617632bb99.json",
+					"jsonFile" : "directory-raylib.raylib.external.glfw-RelWithDebInfo-c5291b77ac617632bb99.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.4"
@@ -80,7 +80,7 @@
 				},
 				{
 					"build" : "raylib/raylib/external/glfw/src",
-					"jsonFile" : "directory-raylib.raylib.external.glfw.src-40c093d56d26c1269655.json",
+					"jsonFile" : "directory-raylib.raylib.external.glfw.src-RelWithDebInfo-40c093d56d26c1269655.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.4"
@@ -95,7 +95,7 @@
 					]
 				}
 			],
-			"name" : "",
+			"name" : "RelWithDebInfo",
 			"projects" : 
 			[
 				{
@@ -151,35 +151,35 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "VOXEL_BOT::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-VOXEL_BOT-355de133c35598df5edf.json",
+					"jsonFile" : "target-VOXEL_BOT-RelWithDebInfo-38aa8c7646298edc7525.json",
 					"name" : "VOXEL_BOT",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 4,
 					"id" : "glfw::@a896dd99b4a5c6eab3d9",
-					"jsonFile" : "target-glfw-23d8b0dd88bd740fc1ac.json",
+					"jsonFile" : "target-glfw-RelWithDebInfo-587a2a76dd78f8a08d7d.json",
 					"name" : "glfw",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "raylib::@7d429ebd5d102775094d",
-					"jsonFile" : "target-raylib-67af3a87bdad3f7e00aa.json",
+					"jsonFile" : "target-raylib-RelWithDebInfo-0400e9ca53d3bfa9815e.json",
 					"name" : "raylib",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "uninstall::@5003b8f497eeabc0006e",
-					"jsonFile" : "target-uninstall-35b07ae5f777bee53158.json",
+					"jsonFile" : "target-uninstall-RelWithDebInfo-35b07ae5f777bee53158.json",
 					"name" : "uninstall",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 4,
 					"id" : "update_mappings::@a896dd99b4a5c6eab3d9",
-					"jsonFile" : "target-update_mappings-719fa0d6f0092bb2bc88.json",
+					"jsonFile" : "target-update_mappings-RelWithDebInfo-719fa0d6f0092bb2bc88.json",
 					"name" : "update_mappings",
 					"projectIndex" : 2
 				}

@@ -106,7 +106,6 @@
 *     3. This notice may not be removed or altered from any source distribution.
 *
 **********************************************************************************************/
-#define GRAPHICS_API_OPENGL_43
 #ifndef RLGL_H
 #define RLGL_H
 

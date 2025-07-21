@@ -27,13 +27,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 45,
+				"line" : 49,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 51,
+				"line" : 55,
 				"parent" : 0
 			},
 			{
@@ -68,7 +68,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-std=c++17"
+					"fragment" : "-O2 -g -DNDEBUG -std=c++17"
 				}
 			],
 			"defines" : 
@@ -125,12 +125,21 @@
 		"commandFragments" : 
 		[
 			{
+				"fragment" : "-O2 -g -DNDEBUG",
+				"role" : "flags"
+			},
+			{
 				"fragment" : "",
 				"role" : "flags"
 			},
 			{
 				"backtrace" : 2,
 				"fragment" : "raylib/raylib/libraylib.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-fsanitize=address,undefined",
 				"role" : "libraries"
 			},
 			{

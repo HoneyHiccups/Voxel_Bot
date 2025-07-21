@@ -6,5 +6,5 @@ CXX_DEFINES = -DGRAPHICS_API_OPENGL_43 -DPLATFORM_DESKTOP
 
 CXX_INCLUDES = -I/home/honey_hiccups/Documents/Voxel_Bot/raylib/src -I/home/honey_hiccups/Documents/Voxel_Bot/raylib/src/external/glfw/include
 
-CXX_FLAGS = -std=c++17
+CXX_FLAGS = -O2 -g -DNDEBUG -std=c++17
 

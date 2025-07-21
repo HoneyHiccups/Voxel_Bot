@@ -11,17 +11,21 @@ message(STATUS "Requested OpenGL version: ${OPENGL_VERSION}")
 message(STATUS "C++ compiler: ${CMAKE_CXX_COMPILER}")
 message(STATUS "C++ compiler version: ${CMAKE_CXX_COMPILER_VERSION}")
 message(STATUS "Default C++ standard: ${CMAKE_CXX_STANDARD_DEFAULT}")
+message(STATUS "DEGUB fsanitize=address,undefined")
 message(STATUS "=========================================")
 
-# Set the C++ standard to C++17
+set(CMAKE_BUILD_TYPE RelWithDebInfo)
+
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
+set(CMAKE_CXX_FLAGS_DEBUG)
 
-# Set the C standard to C99
+
 set(CMAKE_C_STANDARD 99)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_C_EXTENSIONS OFF)
+set(CMAKE_C_FLAGS_DEBUG)
 
 # Find OpenGL
 find_package(OpenGL REQUIRED)
@@ -48,4 +52,4 @@ add_executable(${PROJECT_NAME} ${SOURCE_FILES} ${HEADER_FILES})
 add_subdirectory(raylib)
 
 # Link raylib and OpenGL
-target_link_libraries(${PROJECT_NAME} PUBLIC raylib ${OPENGL_LIBRARIES})
+target_link_libraries(${PROJECT_NAME} PUBLIC raylib "-fsanitize=address,undefined" ${OPENGL_LIBRARIES})

@@ -166,7 +166,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC"
+					"fragment" : "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O2 -g -DNDEBUG -std=c99 -fPIC"
 				},
 				{
 					"backtrace" : 2,
