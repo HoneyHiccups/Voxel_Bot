@@ -29,12 +29,13 @@ int main ()
 
 
     // Load compute shader
-    const char *computeShaderCode = LoadFileText("/home/honey_hiccups/Documents/Voxel_Bot/src/shaders/TestingComputeShader.comp");
+    char *computeShaderCode = LoadFileText("/home/honey_hiccups/Documents/Voxel_Bot/src/shaders/TestingComputeShader.comp");
     unsigned int computeShaderId = rlCompileShader(computeShaderCode, RL_COMPUTE_SHADER);
 
     // 2. Create the compute shader program
 
     unsigned int computeProgram = rlLoadComputeShaderProgram(computeShaderId);
+    UnloadFileText(computeShaderCode);
 
     Shader computeShader = { computeProgram };
 
@@ -76,15 +77,16 @@ int main ()
 
         BeginDrawing();
 
-        BeginShaderMode(computeShader);
-		rlSetShader(computeShader.id, NULL);
-        rlComputeShaderDispatch((int)ceil(800.0f / 16.0f),(int)ceil(600.0f / 16.0f),1);
+
+        //BeginShaderMode(computeShader);      // ?causes segfault
+		//rlSetShader(computeShader.id, NULL); // ?causes segfault
+        rlComputeShaderDispatch((int)ceil(800.0f / 16.0f),(int)ceil(600.0f / 16.0f),1); //dose not causes segfault
 
 
         //shadder img draw
         DrawTexture(outputTex, 0, 0, WHITE); 
 
-        //EndShaderMode();
+        EndShaderMode();
 
         DrawFPS(0 ,20);
 		EndDrawing();
